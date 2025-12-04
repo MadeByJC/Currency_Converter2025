@@ -5,25 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
-    <label for="currency">Choose a base Amount:</label>
-    <input type="number" id="amount" placeholder="Enter amount" />
-    <select id="currency">
-        <option value="USD">US Dollar (USD)</option>
-        <option value="EUR">Euro (EUR)</option>
-        <option value="GBP">British Pound (GBP)</option>
-        <option value="JPY">Japanese Yen (JPY)</option>
-        <option value="AUD">Australian Dollar (AUD)</option>
-    </select>
+    <label for="base-currency">Choose a base Amount:</label>
+    <input type="number" id="base-amount" placeholder="Enter amount" />
+    <select id="base-currency-dropdown"></select>
+
     <br>
-    <label for="exchange-rate">Convert's to</label>
-    <input id="convertedAmount" readonly/>
-    <select id="exchange-rate">
-        <option value="USD">US Dollar (USD)</option>
-        <option value="EUR">Euro (EUR)</option>
-        <option value="GBP">British Pound (GBP)</option>
-        <option value="JPY">Japanese Yen (JPY)</option>
-        <option value="AUD">Australian Dollar (AUD)</option>
+    
+    <label for="converted-currency">Convert's to</label>
+    <input id="converted-amount" readonly/>
+    <select id="converted-currency">
+    
+    </select>
 </body>
 </html>
