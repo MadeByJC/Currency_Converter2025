@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <script src="javascript.js"></script>
 </head>
-<body>
-    <label for="base-currency">Choose a base Amount:</label>
-    <input type="number" id="base-amount" placeholder="Enter amount" />
-    <select id="base-currency-dropdown"></select>
 
-    <br>
-    
-    <label for="converted-currency">Convert's to</label>
-    <input id="converted-amount" readonly/>
-    <select id="converted-currency">
-    
-    </select>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <input type="number" id="base-amount" placeholder="Enter amount" />
+            <select id="base-currency-dropdown"></select>
+        </div>
+
+        <br>
+        <i class='bx bx-arrow-down-up'></i>
+        <br><br>
+
+        <div class="output-group">
+            <input id="converted-amount" readonly />
+            <select id="converted-currency">
+
+            </select>
+        </div>
 </body>
+
 </html>

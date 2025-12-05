@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     } catch (error) {
         console.error('Error fetching currencies:', error);
     }
-    
+
 
     async function fetchrates() {
         try {
